@@ -9,6 +9,11 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>test-web</name>
     <description>Demo project for Spring Boot and web</description>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.3.12.RELEASE</version>
+    </parent>
     <properties>
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

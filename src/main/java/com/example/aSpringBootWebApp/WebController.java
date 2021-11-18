@@ -11,11 +11,10 @@ public class WebController {
     public WebController() {
     }
 
-    ;
 
     @GetMapping("/")
     public String getPage() {
-        return "This is welcome page. Current time is " + LocalDateTime.now().toString();
+        return "This is welcome page. Current time is " + LocalDateTime.now();
     }
 
 
