@@ -1,4 +1,4 @@
-package com.example.testweb;
+package com.example.aSpringBootWebApp;
 
 import org.junit.After;
 import org.junit.Before;
@@ -10,7 +10,6 @@ import org.springframework.boot.test.web.client.TestRestTemplate;
 import org.springframework.boot.web.server.LocalServerPort;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import static org.junit.Assert.*;
 import static org.assertj.core.api.Assertions.assertThat;
 
 
