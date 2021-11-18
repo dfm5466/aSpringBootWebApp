@@ -52,14 +52,12 @@ pipeline {
         always {
             echo 'This will always run'
             deleteDir() /* clean up our workspace */
-
-            emailext body: 'SUCCESS ' + env.BUILD_TAG,
-                subject: 'Jenkinks CICD',
-                to: 'dmikhailov@me.com'
-
         }
         success {
             echo 'This will run only if successful'
+            emailext body: 'SUCCESS',
+                subject: 'Jenkinks CICD',
+                to: 'dmikhailov@me.com'
         }
         failure {
             echo 'This will run only if failed'
